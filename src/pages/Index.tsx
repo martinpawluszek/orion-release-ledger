@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OrionHeader from "@/components/OrionHeader";
+import OrionStats from "@/components/OrionStats";
 import FilterControls from "@/components/FilterControls";
 import ReleaseCard from "@/components/ReleaseCard";
 
@@ -51,7 +52,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center py-8">
           <div>
-            <h1 className="text-5xl font-bold leading-tight mb-4">
+            <h1 className="text-5xl font-bold leading-tight mb-4 text-[hsl(var(--text-primary))]">
               Orion Releases (v4.0+)
             </h1>
             <p className="text-[hsl(var(--text-secondary))] text-lg mb-6">
@@ -69,7 +70,7 @@ const Index = () => {
           </div>
           
           <div className="orion-surface p-6">
-            <h3 className="font-semibold mb-4">How to add a new release:</h3>
+            <h3 className="font-semibold mb-4 text-[hsl(var(--text-primary))]">How to add a new release:</h3>
             <ol className="space-y-2 text-sm text-[hsl(var(--text-secondary))]">
               <li>1. Duplicate the <em>Release Card</em> markup below.</li>
               <li>2. Update <code className="bg-black/20 px-1 rounded">data-version</code>, <code className="bg-black/20 px-1 rounded">data-date</code>, and content under each category.</li>
@@ -101,6 +102,9 @@ const Index = () => {
             </div>
           )}
         </section>
+
+        {/* Stats Section */}
+        <OrionStats />
 
         <footer className="text-[hsl(var(--text-secondary))] text-sm py-8 mt-12">
           <div>© Moabits. Internal release information for Orion customers. Please do not share externally.</div>

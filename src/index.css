@@ -6,16 +6,17 @@
 
 @layer base {
   :root {
-    /* Brand Colors (Moabits/Orion Theme) */
-    --brand-bg: 204 65% 6%;           /* #0a0f1a - Deep dark blue */
-    --brand-surface: 208 55% 10%;     /* #0f1724 - Card surfaces */
-    --brand-accent: 171 71% 48%;      /* #21d4b4 - Primary teal accent */
-    --brand-accent-secondary: 194 100% 60%; /* #6ae0ff - Secondary blue accent */
+    /* Moabits Brand Colors */
+    --brand-bg: 239 32% 10%;          /* #1a1a2e - Deep navy from Moabits */
+    --brand-surface: 239 32% 12%;     /* #20203a - Slightly lighter surface */
+    --brand-accent: 171 71% 48%;      /* #21d4b4 - Moabits teal accent */
+    --brand-accent-secondary: 259 94% 65%; /* #8b5cf6 - Moabits purple accent */
+    --brand-accent-tertiary: 276 100% 75%; /* #c084fc - Light purple accent */
     
     /* Text Colors */
-    --text-primary: 214 100% 95%;     /* #e8f0ff - Primary text */
-    --text-secondary: 217 43% 78%;    /* #b7c3d9 - Secondary text */
-    --text-muted: 217 30% 65%;        /* Muted text */
+    --text-primary: 0 0% 98%;         /* #fafafa - Primary white text */
+    --text-secondary: 220 14% 71%;    /* #b4b8c5 - Secondary muted text */
+    --text-muted: 220 9% 60%;         /* Muted text for less emphasis */
     
     /* State Colors */
     --success: 142 71% 45%;           /* #16a34a - Success green */
@@ -23,20 +24,22 @@
     --error: 0 84% 60%;               /* #ef4444 - Error red */
     
     /* UI Elements */
-    --border-subtle: 0 0% 100% / 0.08;  /* Subtle borders */
-    --border-standard: 0 0% 100% / 0.12; /* Standard borders */
+    --border-subtle: 0 0% 100% / 0.08;    /* Subtle borders */
+    --border-standard: 0 0% 100% / 0.12;  /* Standard borders */
     --surface-overlay: 0 0% 100% / 0.04;  /* Card overlays */
     
-    /* Gradients */
+    /* Moabits-inspired Gradients */
     --gradient-brand: linear-gradient(135deg, hsl(var(--brand-accent)), hsl(var(--brand-accent-secondary)));
-    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100% / 0.04), hsl(0 0% 100% / 0.02));
-    --gradient-hero: radial-gradient(1200px 600px at 10% -10%, hsl(var(--brand-accent) / 0.15), transparent 40%),
-                     radial-gradient(1200px 600px at 110% -10%, hsl(var(--brand-accent-secondary) / 0.12), transparent 40%),
+    --gradient-purple: linear-gradient(135deg, hsl(var(--brand-accent-secondary)), hsl(var(--brand-accent-tertiary)));
+    --gradient-surface: linear-gradient(180deg, hsl(var(--brand-accent-secondary) / 0.05), hsl(var(--brand-accent) / 0.03));
+    --gradient-hero: radial-gradient(1200px 600px at 10% -10%, hsl(var(--brand-accent) / 0.12), transparent 40%),
+                     radial-gradient(1200px 600px at 110% -10%, hsl(var(--brand-accent-secondary) / 0.15), transparent 40%),
                      hsl(var(--brand-bg));
     
-    /* Shadows */
-    --shadow-soft: 0 10px 30px hsl(0 0% 0% / 0.25);
-    --shadow-glow: 0 0 40px hsl(var(--brand-accent) / 0.4);
+    /* Shadows with brand colors */
+    --shadow-soft: 0 10px 30px hsl(var(--brand-bg) / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--brand-accent) / 0.3);
+    --shadow-purple-glow: 0 0 40px hsl(var(--brand-accent-secondary) / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,4 +169,39 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  
+  .orion-button-primary {
+    background: var(--gradient-brand);
+    @apply px-6 py-3 rounded-xl font-semibold text-white border-0 transition-all duration-300;
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .orion-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow), 0 15px 35px hsl(var(--brand-accent) / 0.4);
+  }
+  
+  .orion-button-secondary {
+    background: var(--gradient-purple);
+    @apply px-6 py-3 rounded-xl font-semibold text-white border-0 transition-all duration-300;
+    box-shadow: var(--shadow-purple-glow);
+  }
+  
+  .orion-button-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-purple-glow), 0 15px 35px hsl(var(--brand-accent-secondary) / 0.4);
+  }
+  
+  .orion-stats-card {
+    background: var(--gradient-surface);
+    border: 1px solid hsl(var(--border-standard));
+    @apply p-6 rounded-2xl text-center transition-all duration-300;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .orion-stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft), 0 20px 40px hsl(var(--brand-bg) / 0.6);
+  }
+}
 }
