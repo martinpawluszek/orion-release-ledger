@@ -106,7 +106,7 @@ const ReleaseCard = ({ release, searchQuery, selectedCategories }: ReleaseCardPr
                                 >
                                   {attachment === "Plan XP Announcement" ? (
                                     <img 
-                                      src="/lovable-uploads/87183805-17f7-46ad-a9d9-d17e2b49da59.png" 
+                                      src="/lovable-uploads/0a1665d5-fd90-4453-aa00-869322f77534.png" 
                                       alt="Plan XP Announcement" 
                                       className="w-full h-full object-cover rounded"
                                     />

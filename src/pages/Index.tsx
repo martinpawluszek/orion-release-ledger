@@ -19,7 +19,7 @@ const mockReleases = [
       "Enhancements": [
         {
           text: "<strong>AP → XP (Flex Plan)</strong> — The Airtime Plan is evolving into the Flex Plan. A PDF with full details will be attached here.",
-          attachments: ["Flex Plan PDF", "Plan XP Announcement"]
+          attachments: ["Plan XP Announcement"]
         },
         {
           text: "<strong>Faster Invoicing</strong> — We now invoice based on <em>CDR Close Time</em> instead of <em>Open Time</em>, so billing can run as soon as the next month starts."
