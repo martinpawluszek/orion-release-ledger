@@ -14,7 +14,7 @@ const mockReleases = [
         "<strong>BI Section</strong> — A new analytics space showing how your business is performing and growing, with insights that make customer invoicing easier."
       ],
       "Enhancements": [
-        "<strong>AP → XP (Flex Plan)</strong> — The Airtime Plan is evolving into the Flex Plan. A PDF with full details will be attached here.",
+        "<strong>AP → XP (Flex Plan)</strong> — The Airtime Plan is evolving into the Flex Plan. A PDF with full details will be attached here.<div class='mt-2'><img src='/lovable-uploads/87183805-17f7-46ad-a9d9-d17e2b49da59.png' alt='Plan XP Announcement' class='w-full max-w-md rounded-lg border border-[hsl(var(--border-subtle))]' /></div>",
         "<strong>Faster Invoicing</strong> — We now invoice based on <em>CDR Close Time</em> instead of <em>Open Time</em>, so billing can run as soon as the next month starts.",
         "<strong>Simpler Product Change Rules</strong> — Product change rules are greatly simplified. Detailed rule list to follow."
       ],
@@ -28,7 +28,7 @@ const mockReleases = [
     },
     attachments: {
       "New Features": ["BI dashboard screenshot"],
-      "Enhancements": ["Flex Plan PDF", "Plan XP Announcement"]
+      "Enhancements": ["Flex Plan PDF"]
     }
   }
 ];
