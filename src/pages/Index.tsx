@@ -28,7 +28,7 @@ const mockReleases = [
     },
     attachments: {
       "New Features": ["BI dashboard screenshot"],
-      "Enhancements": ["Flex Plan PDF"]
+      "Enhancements": ["Flex Plan PDF", "Plan XP Announcement"]
     }
   }
 ];

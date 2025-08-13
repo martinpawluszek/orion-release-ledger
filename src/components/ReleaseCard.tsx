@@ -99,9 +99,17 @@ const ReleaseCard = ({ release, searchQuery, selectedCategories }: ReleaseCardPr
                       {release.attachments[category].map((attachment, index) => (
                         <div
                           key={index}
-                          className="aspect-video bg-black/20 border border-dashed border-[hsl(var(--border-subtle))] rounded-lg flex items-center justify-center text-xs text-[hsl(var(--text-secondary))] p-3 text-center"
+                          className="aspect-video bg-black/20 border border-dashed border-[hsl(var(--border-subtle))] rounded-lg flex items-center justify-center text-xs text-[hsl(var(--text-secondary))] p-3 text-center overflow-hidden"
                         >
-                          {attachment}
+                          {attachment === "Plan XP Announcement" ? (
+                            <img 
+                              src="/lovable-uploads/87183805-17f7-46ad-a9d9-d17e2b49da59.png" 
+                              alt="Plan XP Announcement" 
+                              className="w-full h-full object-cover rounded"
+                            />
+                          ) : (
+                            attachment
+                          )}
                         </div>
                       ))}
                     </div>
