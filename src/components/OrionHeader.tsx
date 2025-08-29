@@ -11,7 +11,7 @@ const OrionHeader = () => {
               alt="Orion Logo" 
               className="w-8 h-8"
             />
-            <span>Moabits • Orion Release Notes</span>
+            <span>Orion • Release Notes</span>
           </div>
           <div className="orion-pill">
             Private area (login coming soon)
