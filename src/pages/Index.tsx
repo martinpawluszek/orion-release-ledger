@@ -68,9 +68,6 @@ const Index = () => {
             <h1 className="text-5xl font-bold leading-tight mb-4 text-[hsl(var(--text-primary))]">
               Orion Releases (v4.0+)
             </h1>
-            <p className="text-[hsl(var(--text-secondary))] text-lg mb-6">
-              Central place for all Orion deployments and updates. Each release shows the version, deployment date, and what changed across <strong>New Features</strong>, <strong>Enhancements</strong>, <strong>Front‑End Changes</strong>, and <strong>Bug Fixes</strong>. Images/PDFs can be attached inside each section.
-            </p>
             
             <FilterControls
               searchQuery={searchQuery}
@@ -83,15 +80,9 @@ const Index = () => {
           </div>
           
           <div className="orion-surface p-6">
-            <h3 className="font-semibold mb-4 text-[hsl(var(--text-primary))]">How to add a new release:</h3>
-            <ol className="space-y-2 text-sm text-[hsl(var(--text-secondary))]">
-              <li>1. Duplicate the <em>Release Card</em> markup below.</li>
-              <li>2. Update <code className="bg-black/20 px-1 rounded">data-version</code>, <code className="bg-black/20 px-1 rounded">data-date</code>, and content under each category.</li>
-              <li>3. Attach thumbnails/images inside <em>Attachments</em>.</li>
-              <li>4. Add the version to the <em>Version</em> select box at the top.</li>
-            </ol>
-            <p className="text-[hsl(var(--text-secondary))] text-sm mt-4 mb-0">
-              <strong>Tip:</strong> Keep big PDFs (e.g., Flex Plan details) as links hosted in Lovable and reference them inside Enhancements.
+            <p className="text-[hsl(var(--text-secondary))] text-lg mb-6">
+              Central place for all Orion deployments and updates. 
+              Each release shows the version, deployment date, and what changed across New Features, Enhancements, Front‑End Changes, and Bug Fixes. Images/PDFs can be attached inside each section.
             </p>
           </div>
         </section>
