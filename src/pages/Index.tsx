@@ -120,7 +120,7 @@ const Index = () => {
         <OrionStats />
 
         <footer className="text-[hsl(var(--text-secondary))] text-sm py-8 mt-12">
-          <div>© Moabits. Internal release information for Orion customers. Please do not share externally.</div>
+          <div>© Orion. Internal release information for Orion customers. Please do not share externally.</div>
         </footer>
       </main>
     </div>
