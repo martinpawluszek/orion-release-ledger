@@ -79,7 +79,7 @@ const Index = () => {
             />
           </div>
           
-          <div className="orion-surface p-6">
+          <div className="orion-surface p-6 self-end">
             <p className="text-[hsl(var(--text-secondary))] text-lg mb-6">
               Central place for all Orion deployments and updates. 
               Each release shows the version, deployment date, and what changed across New Features, Enhancements, Front‑End Changes, and Bug Fixes. Images/PDFs can be attached inside each section.
