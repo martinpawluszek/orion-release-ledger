@@ -25,7 +25,7 @@ const OrionStats = () => {
       <StatsCard number="4.0+" label="Orion Versions" accent="teal" />
       <StatsCard number="500+" label="Features Delivered" accent="purple" />
       <StatsCard number="99.9%" label="Platform Uptime" accent="teal" />
-      <StatsCard number="1,000+" label="Active Users" accent="purple" />
+      <StatsCard number="2,000+" label="Active Users" accent="purple" />
     </section>
   );
 };
