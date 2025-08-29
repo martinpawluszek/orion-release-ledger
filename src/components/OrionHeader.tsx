@@ -7,7 +7,7 @@ const OrionHeader = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 font-bold text-[hsl(var(--text-primary))]">
             <img 
-              src="/lovable-uploads/bceeacf1-7eef-4084-9c77-a9309cd41753.png" 
+              src="/lovable-uploads/28647a6e-810f-4715-aa08-c845b3d77281.png" 
               alt="Orion Logo" 
               className="w-8 h-8"
             />
