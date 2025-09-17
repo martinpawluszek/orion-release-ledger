@@ -81,45 +81,7 @@ const ReleaseCard = ({ release, searchQuery, selectedCategories }: ReleaseCardPr
                 {bulletPoints.map((bulletPoint, index) => {
                   const bulletKey = `${category}-${index}`;
                   return (
-                    <div key={index}>
-                      <div className="text-[hsl(var(--text-primary))] mb-2" dangerouslySetInnerHTML={{ __html: bulletPoint.text }} />
-                      
-                      {bulletPoint.attachments && bulletPoint.attachments.length > 0 && (
-                        <Collapsible 
-                          open={openAttachments[bulletKey]} 
-                          onOpenChange={() => toggleAttachments(bulletKey)}
-                        >
-                          <CollapsibleTrigger className="orion-surface p-3 w-full flex items-center justify-between text-sm font-semibold cursor-pointer hover:bg-[hsl(var(--surface-overlay))] transition-colors">
-                            <span>Attachments (optional)</span>
-                            {openAttachments[bulletKey] ? (
-                              <ChevronUp className="w-4 h-4" />
-                            ) : (
-                              <ChevronDown className="w-4 h-4" />
-                            )}
-                          </CollapsibleTrigger>
-                          <CollapsibleContent className="mt-2">
-                            <div className="grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-3">
-                              {bulletPoint.attachments.map((attachment, attachmentIndex) => (
-                                <div
-                                  key={attachmentIndex}
-                                  className="aspect-video bg-black/20 border border-dashed border-[hsl(var(--border-subtle))] rounded-lg flex items-center justify-center text-xs text-[hsl(var(--text-secondary))] p-3 text-center overflow-hidden"
-                                >
-                                  {attachment === "Plan XP Announcement" ? (
-                                    <img 
-                                      src="/lovable-uploads/0a1665d5-fd90-4453-aa00-869322f77534.png" 
-                                      alt="Plan XP Announcement" 
-                                      className="w-full h-full object-cover rounded"
-                                    />
-                                  ) : (
-                                    attachment
-                                  )}
-                                </div>
-                              ))}
-                            </div>
-                          </CollapsibleContent>
-                        </Collapsible>
-                      )}
-                    </div>
+                  <div key={index} className="text-[hsl(var(--text-primary))]" dangerouslySetInnerHTML={{ __html: bulletPoint.text }} />
                   );
                 })}
               </div>
