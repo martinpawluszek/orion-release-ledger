@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 interface BulletPoint {
-  text: string;
-  attachments?: string[];
+  title: string;
+  description: string;
 }
 
 interface ReleaseData {
@@ -78,12 +78,16 @@ const ReleaseCard = ({ release, searchQuery, selectedCategories }: ReleaseCardPr
                 {category}
               </h3>
               <div className="space-y-4">
-                {bulletPoints.map((bulletPoint, index) => {
-                  const bulletKey = `${category}-${index}`;
-                  return (
-                  <div key={index} className="text-[hsl(var(--text-primary))]" dangerouslySetInnerHTML={{ __html: bulletPoint.text }} />
-                  );
-                })}
+                {bulletPoints.map((bulletPoint, index) => (
+                  <div key={index} className="space-y-2">
+                    <h4 className="font-semibold text-[hsl(var(--text-primary))]">
+                      {bulletPoint.title}
+                    </h4>
+                    <p className="text-[hsl(var(--text-secondary))] leading-relaxed">
+                      {bulletPoint.description}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           );
