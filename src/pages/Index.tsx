@@ -12,38 +12,31 @@ const mockReleases = [
     sections: {
       "New Features": [
         {
-          title: "BI Section",
-          description: "A new analytics space showing how your business is performing and growing, with insights that make customer invoicing easier."
+          text: "<strong>BI Section</strong> — A new analytics space showing how your business is performing and growing, with insights that make customer invoicing easier."
         }
       ],
       "Enhancements": [
         {
-          title: "AP → XP (Flex Plan)",
-          description: "The Airtime Plan is evolving into the Flex Plan."
+          text: "<strong>AP → XP (Flex Plan)</strong> — The Airtime Plan is evolving into the Flex Plan."
         },
         {
-          title: "Faster Invoicing",
-          description: "We now invoice based on CDR Close Time instead of Open Time, so billing can run as soon as the next month starts."
+          text: "<strong>Faster Invoicing</strong> — We now invoice based on <em>CDR Close Time</em> instead of <em>Open Time</em>, so billing can run as soon as the next month starts."
         },
         {
-          title: "Simpler Product Change Rules",
-          description: "Product change rules are greatly simplified."
+          text: "<strong>Simpler Product Change Rules</strong> — Product change rules are greatly simplified."
         }
       ],
       "Front End Changes": [
         {
-          title: "Better Section Organization",
-          description: "Navigation and grouping have been improved so things are easier to find."
+          text: "<strong>Better Section Organization</strong> — Navigation and grouping have been improved so things are easier to find."
         },
         {
-          title: "Usage Speed‑ups",
-          description: "We now load SIMs after filtering, so you only see the SIMs you need and the page loads much faster."
+          text: "<strong>Usage Speed‑ups</strong> — We now load SIMs <em>after</em> filtering, so you only see the SIMs you need and the page loads much faster."
         }
       ],
       "Bug Fixes": [
         {
-          title: "Autorenewal",
-          description: "Fixed an issue where Autorenewal wasn't working properly."
+          text: "<strong>Autorenewal</strong> — Fixed an issue where Autorenewal wasn't working properly."
         }
       ]
     }
