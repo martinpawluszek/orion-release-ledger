@@ -8,7 +8,7 @@ const mockReleases = [
   {
     version: "4.0",
     date: "2025-08-01",
-    deploymentMonth: "Sep, 25th 2025",
+    deploymentMonth: "Sep, 21st 2025",
     sections: {
       "New Features": [
         {
