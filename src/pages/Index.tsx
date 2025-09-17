@@ -44,6 +44,10 @@ const mockReleases = [
         {
           title: "Autorenewal",
           description: "Fixed an issue where Autorenewal wasn't working properly."
+        },
+        {
+          title: "Product Change",
+          description: "Improvements and simplifications on logics when one product is changed for another on an active SIM."
         }
       ]
     }
