@@ -44,10 +44,6 @@ const mockReleases = [
         {
           title: "Autorenovación",
           description: "Se corrigió un problema donde la Autorenovación no funcionaba correctamente."
-        },
-        {
-          title: "Cambio de Producto",
-          description: "Mejoras y simplificaciones en las lógicas cuando un producto se cambia por otro en una SIM activa."
         }
       ]
     }
