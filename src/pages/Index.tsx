@@ -37,7 +37,7 @@ const mockReleases = [
         },
         {
           title: "Remodelación de la funcionalidad de Uso",
-          description: "Ahora cargamos las SIMs después del filtrado, para que solo veas las SIMs que necesitas y la página cargue mucho más rápido."
+          description: "El uso ahora necesita parametro de filtrado para mostrar información de manera más eficiente, si el filtro selecciona trae mas de 100 filas o 4 segundos de carga, se descarga automaticamente el reporte con la información en un archivo xlsx en el icono de la campana"
         }
       ],
       "Correcciones de Errores": [
