@@ -83,9 +83,8 @@ const ReleaseCard = ({ release, searchQuery, selectedCategories }: ReleaseCardPr
                     <h4 className="font-semibold text-[hsl(var(--text-primary))]">
                       {bulletPoint.title}
                     </h4>
-                    <p className="text-[hsl(var(--text-secondary))] leading-relaxed whitespace-pre-line">
-                      {bulletPoint.description}
-                    </p>
+                    <div className="text-[hsl(var(--text-secondary))] leading-relaxed whitespace-pre-line"
+                         dangerouslySetInnerHTML={{ __html: bulletPoint.description }} />
                   </div>
                 ))}
               </div>
