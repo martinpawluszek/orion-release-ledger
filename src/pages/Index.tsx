@@ -19,7 +19,7 @@ const mockReleases = [
       "Mejoras": [
         {
           title: "AP → XP (Plan Flex)",
-          description: "El Plan Airtime está evolucionando hacia el Plan Flex. con las siguiente reglas:\n\n1. Lógica Principal: Se basa en una duración total en meses. Cada mes, la SIM recibe una nueva bolsa de datos.\n\n2. Consumo Excedente: Si en un mes se consume más de la bolsa, el consumo extra se factura por separado.\n\n3. Renovaciones y Expiración: Con renovaciones, el plan se renueva por otro ciclo. Sin renovaciones, expira y la SIM se suspende."
+          description: "El Plan Airtime está evolucionando hacia el Plan Flex. con las siguiente reglas:\n\n1. Lógica Principal: Se basa en una duración total en meses. Cada mes, la SIM recibe una nueva bolsa de datos.\n2. Consumo Excedente: Si en un mes se consume más de la bolsa, el consumo extra se factura por separado.\n3. Renovaciones y Expiración: Con renovaciones, el plan se renueva por otro ciclo. Sin renovaciones, expira y la SIM se suspende."
         },
         {
           title: "Cambio en el Cálculo de Facturación",
