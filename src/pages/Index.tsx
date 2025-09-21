@@ -43,7 +43,7 @@ const mockReleases = [
       "Correcciones de Errores": [
         {
           title: "Autorenovación",
-          description: "Se corrigió un problema donde la Autorenovación no funcionaba correctamente."
+          description: "Se hicieron mejoras en el código para la función de la autorenovación más eficiente y garantizar su correcto funcionamiento para todos nuestros productos de conectividad. Los periodos de autorenovacion van a depender del tipo de producto:\n\n1. Producto con duración mes calendario: Data Pool, Fixed Plan y PAYG, se renuevan mensualmente\n\n2. Producto con duracion variable: Nuevo Flex Plan, se renueva cuando se acaban los meses asignados al plan"
         }
       ]
     }
