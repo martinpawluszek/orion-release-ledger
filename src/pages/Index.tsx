@@ -27,7 +27,7 @@ const mockReleases = [
         },
         {
           title: "Reglas de Cambio de Producto Simplificadas",
-          description: "Las reglas de cambio de producto se han simplificado enormemente."
+          description: "Reglas de cambio de producto:\n• Cambio INMEDIATO: Para SIMs nuevas (\"Lista\") o con plan expirado (\"Suspendida\")\n         • Nota: Los planes Pay As You Go (PAYG) cambian inmediatamente, en cualquier caso\n\n • Cambio PROGRAMADO (En Cola): Para SIMs con un plan activo. El nuevo plan se aplicará al finalizar el ciclo del actual\n\nReglas para Mover SIMs entre Clientes:\n• Movimiento con Plan Activo: Una SIM con plan activo puede moverse libremente entre clientes \"hijos\". El cargo del plan se asignará al cliente propietario al final del período de facturación\n     • Nota Importante: Al hacer el cambio entre clientes, es importante seleccionar el mismo plan que la SIM card posee para poder completar el movimiento. Si se elige un plan diferente, el mismo entrará en cola y el movimiento se realizará recién en el próximo período, una vez que el plan actual finalice\n\n• Movimiento con Plan Expirado: Se requiere una activación manual para iniciar el nuevo ciclo para el nuevo cliente"
         }
       ],
       "Cambios de Front End": [
