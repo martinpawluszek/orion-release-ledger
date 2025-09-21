@@ -8,46 +8,46 @@ const mockReleases = [
   {
     version: "4.0",
     date: "2025-08-01",
-    deploymentMonth: "Sep, 21st 2025",
+    deploymentMonth: "Sep, 21 de 2025",
     sections: {
-      "New Features": [
+      "Nuevas Funcionalidades": [
         {
-          title: "BI Section",
-          description: "A new analytics space showing how your business is performing and growing, with insights that make customer invoicing easier."
+          title: "Sección BI",
+          description: "Un nuevo espacio de análisis que muestra cómo está funcionando y creciendo tu negocio, con insights que facilitan la facturación de clientes."
         }
       ],
-      "Enhancements": [
+      "Mejoras": [
         {
-          title: "AP → XP (Flex Plan)",
-          description: "The Airtime Plan is evolving into the Flex Plan."
+          title: "AP → XP (Plan Flex)",
+          description: "El Plan Airtime está evolucionando hacia el Plan Flex."
         },
         {
-          title: "Invoicing Calculation Change",
-          description: "We now invoice based on CDR Close Time instead of Open Time, so billing can run as soon as the next month starts."
+          title: "Cambio en el Cálculo de Facturación",
+          description: "Ahora facturamos basándose en el Tiempo de Cierre CDR en lugar del Tiempo de Apertura, para que la facturación pueda ejecutarse tan pronto como inicie el próximo mes."
         },
         {
-          title: "Simpler Product Change Rules",
-          description: "Product change rules are greatly simplified."
+          title: "Reglas de Cambio de Producto Simplificadas",
+          description: "Las reglas de cambio de producto se han simplificado enormemente."
         }
       ],
-      "Front End Changes": [
+      "Cambios de Front End": [
         {
-          title: "Better Section Organization",
-          description: "Navigation and grouping have been improved so things are easier to find."
+          title: "Mejor Organización de Secciones",
+          description: "La navegación y agrupación han sido mejoradas para que las cosas sean más fáciles de encontrar."
         },
         {
-          title: "Usage Speed‑ups",
-          description: "We now load SIMs after filtering, so you only see the SIMs you need and the page loads much faster."
+          title: "Aceleración de Uso",
+          description: "Ahora cargamos las SIMs después del filtrado, para que solo veas las SIMs que necesitas y la página cargue mucho más rápido."
         }
       ],
-      "Bug Fixes": [
+      "Correcciones de Errores": [
         {
-          title: "Autorenewal",
-          description: "Fixed an issue where Autorenewal wasn't working properly."
+          title: "Autorenovación",
+          description: "Se corrigió un problema donde la Autorenovación no funcionaba correctamente."
         },
         {
-          title: "Product Change",
-          description: "Improvements and simplifications on logics when one product is changed for another on an active SIM."
+          title: "Cambio de Producto",
+          description: "Mejoras y simplificaciones en las lógicas cuando un producto se cambia por otro en una SIM activa."
         }
       ]
     }
@@ -58,7 +58,7 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedVersion, setSelectedVersion] = useState("4.0");
   const [selectedCategories, setSelectedCategories] = useState([
-    "New Features", "Enhancements", "Front End Changes", "Bug Fixes"
+    "Nuevas Funcionalidades", "Mejoras", "Cambios de Front End", "Correcciones de Errores"
   ]);
 
   const filteredReleases = mockReleases.filter(release => 
@@ -74,7 +74,7 @@ const Index = () => {
         <section className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center py-8">
           <div>
             <h1 className="text-5xl font-bold leading-tight mb-4 text-[hsl(var(--text-primary))]">
-              Orion Releases (v4.0+)
+              Versiones de Orion (v4.0+)
             </h1>
             
             <FilterControls
@@ -89,8 +89,8 @@ const Index = () => {
           
           <div className="orion-surface p-6 self-end">
             <p className="text-[hsl(var(--text-secondary))] text-lg mb-6">
-              Central place for all Orion deployments and updates. 
-              Each release shows the version, deployment date, and what changed across New Features, Enhancements, Front‑End Changes, and Bug Fixes. Images/PDFs can be attached inside each section.
+              Lugar central para todos los despliegues y actualizaciones de Orion. 
+              Cada versión muestra la versión, fecha de despliegue, y qué cambió en Nuevas Funcionalidades, Mejoras, Cambios de Front‑End y Correcciones de Errores. Se pueden adjuntar imágenes/PDFs dentro de cada sección.
             </p>
           </div>
         </section>
@@ -109,7 +109,7 @@ const Index = () => {
           {filteredReleases.length === 0 && (
             <div className="orion-surface p-12 text-center">
               <p className="text-[hsl(var(--text-secondary))]">
-                No releases found matching your filters.
+                No se encontraron versiones que coincidan con tus filtros.
               </p>
             </div>
           )}
@@ -119,7 +119,7 @@ const Index = () => {
         <OrionStats />
 
         <footer className="text-[hsl(var(--text-secondary))] text-sm py-8 mt-12">
-          <div>© Orion. Internal release information for Orion customers. Please do not share externally.</div>
+          <div>© Orion. Información interna de versiones para clientes de Orion. Por favor no compartir externamente.</div>
         </footer>
       </main>
     </div>

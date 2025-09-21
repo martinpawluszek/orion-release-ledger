@@ -12,10 +12,10 @@ interface ReleaseData {
   date: string;
   deploymentMonth: string;
   sections: {
-    "New Features": BulletPoint[];
-    "Enhancements": BulletPoint[];
-    "Front End Changes": BulletPoint[];
-    "Bug Fixes": BulletPoint[];
+    "Nuevas Funcionalidades": BulletPoint[];
+    "Mejoras": BulletPoint[];
+    "Cambios de Front End": BulletPoint[];
+    "Correcciones de Errores": BulletPoint[];
   };
 }
 
@@ -59,11 +59,11 @@ const ReleaseCard = ({ release, searchQuery, selectedCategories }: ReleaseCardPr
           Orion <span className="orion-gradient-text">{release.version}</span>
         </h2>
         <div className="flex items-center gap-2 text-sm text-[hsl(var(--text-secondary))]">
-          <span title="Deployment date">
-            Deployed: <strong>{release.deploymentMonth}</strong>
+          <span title="Fecha de despliegue">
+            Desplegado: <strong>{release.deploymentMonth}</strong>
           </span>
           <span>•</span>
-          <span>Release Notes</span>
+          <span>Notas de Versión</span>
         </div>
       </div>
 
