@@ -22,7 +22,7 @@ const mockReleases = [
           description: "The Airtime Plan is evolving into the Flex Plan."
         },
         {
-          title: "Faster Invoicing",
+          title: "Invoicing Calculation Change",
           description: "We now invoice based on CDR Close Time instead of Open Time, so billing can run as soon as the next month starts."
         },
         {
