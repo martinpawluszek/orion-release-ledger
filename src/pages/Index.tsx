@@ -36,7 +36,7 @@ const mockReleases = [
           description: "La navegación y agrupación han sido mejoradas para que las cosas sean más fáciles de encontrar."
         },
         {
-          title: "Aceleración de Uso",
+          title: "Remodelación de la funcionalidad de Uso",
           description: "Ahora cargamos las SIMs después del filtrado, para que solo veas las SIMs que necesitas y la página cargue mucho más rápido."
         }
       ],
