@@ -40,7 +40,7 @@ const mockReleases = [
           description: "El uso ahora necesita parámetros de filtrado para mostrar información de manera más eficiente, si el filtro selecciona trae mas de 100 filas o 4 segundos de carga, se descargá automáticamente el reporte con la información en un archivo xlsx en el ícono de la campana."
         }
       ],
-      "Correcciones de Errores": [
+      "Resolución de bugs": [
         {
           title: "Autorenovación",
           description: "Se hicieron mejoras en el código para la función de la autorenovación más eficiente y garantizar su correcto funcionamiento para todos nuestros productos de conectividad. Los periodos de autorenovacion van a depender del tipo de producto:\n\n1. Producto con duración mes calendario: Data Pool, Fixed Plan y PAYG, se renuevan mensualmente\n\n2. Producto con duracion variable: Nuevo Flex Plan, se renueva cuando se acaban los meses asignados al plan"
@@ -54,7 +54,7 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedVersion, setSelectedVersion] = useState("4.0");
   const [selectedCategories, setSelectedCategories] = useState([
-    "Nuevas Funcionalidades", "Mejoras", "Cambios de Front End", "Correcciones de Errores"
+    "Nuevas Funcionalidades", "Mejoras", "Cambios de Front End", "Resolución de bugs"
   ]);
 
   const filteredReleases = mockReleases.filter(release => 

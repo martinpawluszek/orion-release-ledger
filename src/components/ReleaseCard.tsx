@@ -15,7 +15,7 @@ interface ReleaseData {
     "Nuevas Funcionalidades": BulletPoint[];
     "Mejoras": BulletPoint[];
     "Cambios de Front End": BulletPoint[];
-    "Correcciones de Errores": BulletPoint[];
+    "Resolución de bugs": BulletPoint[];
   };
 }
 

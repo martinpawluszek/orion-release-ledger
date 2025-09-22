@@ -12,7 +12,7 @@ interface FilterControlsProps {
   setSelectedCategories: (categories: string[]) => void;
 }
 
-const categories = ["Nuevas Funcionalidades", "Mejoras", "Cambios de Front End", "Correcciones de Errores"];
+const categories = ["Nuevas Funcionalidades", "Mejoras", "Cambios de Front End", "Resolución de bugs"];
 
 const FilterControls = ({
   searchQuery,
