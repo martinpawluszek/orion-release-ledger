@@ -13,7 +13,7 @@ const mockReleases = [
       "Nuevas Funcionalidades": [
         {
           title: "Sección BI",
-          description: "Un nuevo espacio de análisis que muestra cómo está funcionando y creciendo tu negocio, con insights que facilitan la facturación de clientes, por ejemplo:\n\n1. Comparación entre producto comprado y producto vendido\n2. Qué productos tienen mayor uso\n3. Qué tipo de productos tienen mayor consumo de datos\n4. Qué sub-cuentas tienen mayor cantidad de SIMs activas\n5. Qué productos tienen contratados cada cliente\n6. Cuáles SIMs tienen productos próximos a expirar\n7. Cuáles SIMs fueron activadas en el mes en curso\n8. Vigencias de los Productos Flex Plan"
+          description: "Un nuevo espacio de análisis que muestra cómo está funcionando y creciendo tu negocio, con insights que facilitan la facturación de clientes, por ejemplo:\n\n1. Comparación entre producto comprado y producto vendido.\n2. Qué productos tienen mayor uso.\n3. Qué tipo de productos tienen mayor consumo de datos.\n4. Qué sub-cuentas tienen mayor cantidad de SIMs activas.\n5. Qué productos tienen contratados cada cliente.\n6. Cuáles SIMs tienen productos próximos a expirar.\n7. Cuáles SIMs fueron activadas en el mes en curso.\n8. Vigencias de los Productos Flex Plan."
         }
       ],
       "Mejoras": [
