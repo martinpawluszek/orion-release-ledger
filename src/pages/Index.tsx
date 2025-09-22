@@ -23,7 +23,7 @@ const mockReleases = [
         },
         {
           title: "Cambio en el Cálculo de Facturación",
-          description: "Ahora facturamos basándose en el Tiempo de Cierre CDR en lugar del Tiempo de Apertura, para mejorar la precisión de la facturación ya que existe una latencia en la recepción de los CDRs"
+          description: "Ahora facturamos basándose en el Tiempo de Cierre CDR en lugar del Tiempo de Apertura, para mejorar la precisión de la facturación ya que existe una latencia en la recepción de los CDRs."
         },
         {
           title: "Reglas de Cambio de Producto Simplificadas",
