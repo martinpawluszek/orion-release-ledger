@@ -33,11 +33,11 @@ const mockReleases = [
       "Cambios de Front End": [
         {
           title: "Mejor Organización de Secciones",
-          description: "La navegación y agrupación han sido mejoradas para que las cosas sean más fáciles de encontrar."
+          description: "La navegación y agrupación han sido mejoradas para que los módulos sean más fáciles de encontrar."
         },
         {
           title: "Remodelación de la funcionalidad de Uso",
-          description: "El uso ahora necesita parametro de filtrado para mostrar información de manera más eficiente, si el filtro selecciona trae mas de 100 filas o 4 segundos de carga, se descarga automaticamente el reporte con la información en un archivo xlsx en el icono de la campana"
+          description: "El uso ahora necesita parámetros de filtrado para mostrar información de manera más eficiente, si el filtro selecciona trae mas de 100 filas o 4 segundos de carga, se descargá automáticamente el reporte con la información en un archivo xlsx en el ícono de la campana."
         }
       ],
       "Correcciones de Errores": [
