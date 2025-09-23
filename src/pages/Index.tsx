@@ -100,9 +100,13 @@ const Index = () => {
                 <h3 className="font-medium text-[hsl(var(--text-primary))] mb-1">Manual de Usuario v4.0</h3>
                 <p className="text-sm text-[hsl(var(--text-secondary))]">Guía completa de funcionalidades</p>
               </div>
-              <button className="orion-pill hover:bg-[hsl(var(--accent))] transition-colors">
+              <a 
+                href="/Orion_User_Manual_v4.pdf" 
+                download="Manual_Usuario_Orion_v4.0.pdf"
+                className="orion-pill hover:bg-[hsl(var(--accent))] transition-colors inline-block"
+              >
                 Descargar PDF
-              </button>
+              </a>
             </div>
           </div>
         </section>
