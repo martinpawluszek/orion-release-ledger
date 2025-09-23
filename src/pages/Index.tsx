@@ -88,6 +88,22 @@ const Index = () => {
               Lugar central para todos los despliegues y actualizaciones de Orion. 
               Cada versión muestra la versión, fecha de despliegue, y qué cambió en Nuevas Funcionalidades, Mejoras, Cambios de Front‑End y Correcciones de Errores. Se pueden adjuntar imágenes/PDFs dentro de cada sección.
             </p>
+            
+            {/* User Manual Download */}
+            <div className="flex items-center gap-3 p-4 orion-glass rounded-lg border">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="font-medium text-[hsl(var(--text-primary))] mb-1">Manual de Usuario v4.0</h3>
+                <p className="text-sm text-[hsl(var(--text-secondary))]">Guía completa de funcionalidades</p>
+              </div>
+              <button className="orion-pill hover:bg-[hsl(var(--accent))] transition-colors">
+                Descargar PDF
+              </button>
+            </div>
           </div>
         </section>
 
