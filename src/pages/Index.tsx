@@ -97,7 +97,7 @@ const Index = () => {
                 </svg>
               </div>
               <div className="flex-1">
-                <h3 className="font-medium text-[hsl(var(--text-primary))] mb-1">Manual de Usuario v4.0</h3>
+                <h3 className="font-medium text-[hsl(var(--text-primary))] mb-1">Manual de Usuario</h3>
                 <p className="text-sm text-[hsl(var(--text-secondary))]">Guía completa de funcionalidades</p>
               </div>
               <a 
